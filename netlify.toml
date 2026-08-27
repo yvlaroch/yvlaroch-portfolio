@@ -1,0 +1,121 @@
+# ============================================
+# NETLIFY.TOML - Sécurité Maximale
+# ============================================
+
+[build]
+  publish = "."
+
+# ============================================
+# EN-TÊTES DE SÉCURITÉ (Headers)
+# ============================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # ===== POLITIQUE DE SÉCURITÉ DU CONTENU (CSP) =====
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+      font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+      img-src 'self' data: https:;
+      media-src 'self' https:;
+      connect-src 'self';
+      frame-ancestors 'none';
+      base-uri 'self';
+      form-action 'self';
+    """
+
+    # ===== PROTECTION CONTRE LE CLICKJACKING =====
+    X-Frame-Options = "DENY"
+
+    # ===== PROTECTION XSS =====
+    X-XSS-Protection = "1; mode=block"
+
+    # ===== PROTECTION MIME SNIFFING =====
+    X-Content-Type-Options = "nosniff"
+
+    # ===== REFERRER POLICY =====
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # ===== PERMISSIONS-POLICY (fonctionnalités désactivées) =====
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), usb=(), bluetooth=(), autoplay=()"
+
+    # ===== PAS DE CACHING POUR LES FICHIERS SENSIBLES =====
+    Cache-Control = "public, max-age=31536000, immutable"
+
+    # ===== CORS (pour les ressources) =====
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
+
+# ===== PROTECTION DES FICHIERS SENSIBLES =====
+[[headers]]
+  for = "/.env"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, nosnippet"
+    Content-Type = "text/plain"
+
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/js/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/css/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    X-Content-Type-Options = "nosniff"
+
+# ============================================
+# REDIRECTIONS (Sécurité)
+# ============================================
+[[redirects]]
+  from = "/.env"
+  to = "/404"
+  status = 404
+
+[[redirects]]
+  from = "/admin/*"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 404
+  force = true
+  conditions = {User-Agent = "*bot*|*crawler*|*scraper*|*ai*|*GPTBot*|*CCBot*|*ChatGPT*|*Claude*|*Google-Extended*"}
+
+# ===== PROTECTION CONTRE LES SCRAPERS =====
+[[redirects]]
+  from = "/data/*"
+  to = "/404"
+  status = 404
+  conditions = {User-Agent = "curl|wget|python|java|php|perl"}
+
+[[redirects]]
+  from = "/images/*"
+  to = "/404"
+  status = 404
+  conditions = {User-Agent = "*bot*|*crawler*|*scraper*"}
+
+# ============================================
+# NETLIFY FORMS - Protection anti-spam
+# ============================================
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 302
+
+[[redirects]]
+  from = "/contact/success"
+  to = "/thanks.html"
+  status = 302
+
+[build.environment]
+  NETLIFY_USE_YARN = "false"

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yv Laroch - 3D / CGI / VFX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="images/logo/favicon.ico" />
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header class="navbar">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo/logo.svg" alt="Yv Laroch" />
+						<span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+					</a>
+				</div>
+				<nav>
+					<ul class="nav-links" id="navLinks">
+						<li><a href="index.html" class="active" data-key="nav_home">Home</a></li>
+						<li><a href="portfolio.html" data-key="nav_portfolio">Portfolio</a></li>
+						<li><a href="about.html" data-key="nav_about">About</a></li>
+						<li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+					</ul>
+					<div class="lang-switcher">
+						<button class="lang-btn" data-lang="fr">FR</button>
+						<button class="lang-btn active" data-lang="en">EN</button>
+						<button class="lang-btn" data-lang="mg">MG</button>
+					</div>
+					<div class="menu-toggle" id="menuToggle">
+						<span></span><span></span><span></span>
+					</div>
+				</nav>
+			</div>
+	</header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb1"></div>
+            <div class="gradient-orb orb2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-avatar">
+                <img src="images/avatar.png" alt="Yv Laroch" id="heroAvatar" />
+            </div>
+			   <h1 class="hero-title" data-key="hero_title">YV LAROCH</h1>
+			<p class="hero-subtitle" data-key="hero_subtitle">3D / CGI / VFX · Visual Storytelling</p>
+			<p class="hero-tagline" data-key="hero_tagline">Design your own universe.</p>
+			<div class="hero-cta">
+				<a href="portfolio.html" class="btn btn-primary" data-key="hero_cta_portfolio">View Portfolio</a>
+				<a href="contact.html" class="btn btn-outline" data-key="hero_cta_contact">Contact</a>
+			</div>
+	</section>
+
+
+    <!-- ====== FEATURED PROJECTS ====== -->
+   
+	<section class="featured-projects">
+		<div class="container">
+			<h2 data-key="featured_title">Featured <span class="highlight">Projects</span></h2>
+				<div class="featured-grid" id="featuredGrid">
+					<!-- Chargé dynamiquement par main.js -->
+				</div>
+        </div>
+    </section>
+	<!-- ====== SHOWREEL / BEST OF ====== -->
+<section class="showreel-section">
+    <div class="container">
+        <h2>Showreel <span class="highlight">2025</span></h2>
+        <p style="text-align:center; color:var(--text-secondary); margin-bottom:2rem;">
+            Sélection des meilleurs moments de mon travail en 3D, CGI, VFX et cinéma.
+        </p>
+        <div class="showreel-wrapper">
+            <!-- Intégrez ici votre showreel vidéo -->
+            <div class="showreel-placeholder" onclick="openVideo('TA70DH0osuk')">
+                <div class="play-button-large">
+                    <i class="fas fa-play"></i>
+                </div>
+                <p style="color: var(--text-muted); margin-top: 1rem;">Cliquez pour voir un extrait</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="brand">
+                <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                <p data-key="footer_tagline">3D · CGI · VFX · Visual Storytelling</p>
+            </div>
+        <div class="footer-social">
+    <!-- === STUDIO : GraphyNdot === -->
+    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">STUDIO</span>
+    <a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
+    
+    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin:0 0.3rem;">|</span>
+    
+    <!-- === PERSO : Yv Laroch === -->
+    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">PERSO</span>
+    <a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>  <!-- 👈 NOUVEAU -->
+    <a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>            <!-- 👈 NOUVEAU -->
+</div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yv Laroch / GraphyNdot. <span data-key="footer_rights">All rights reserved.</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/translations.js"></script>   <!-- 1. Traductions -->
+<script src="js/main.js"></script>           <!-- 2. Données et interactions -->
+</body>
+</html>

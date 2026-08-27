@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Yv Laroch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="images/logo/favicon.ico" />
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.svg" alt="Yv Laroch" />
+                    <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" data-key="nav_home">Home</a></li>
+                    <li><a href="portfolio.html" class="active" data-key="nav_portfolio">Portfolio</a></li>
+                    <li><a href="about.html" data-key="nav_about">About</a></li>
+                    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="mg">MG</button>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== PORTFOLIO HERO ====== -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 data-key="portfolio_title">3D / <span class="highlight">CGI</span> Portfolio</h1>
+            <p data-key="portfolio_desc">Selected works from my 3D journey...</p>
+        </div>
+    </section>
+
+    <!-- ====== FILTRES (13 catégories) ====== -->
+    <div class="container">
+        <div class="portfolio-filters" id="filterContainer">
+            <button class="filter-btn active" data-filter="all" data-key="filter_all">All</button>
+            <button class="filter-btn" data-filter="3D-CGI" data-key="filter_3d">3D / CGI</button>
+            <button class="filter-btn" data-filter="Environments" data-key="filter_environments">Environments</button>
+            <button class="filter-btn" data-filter="Architectural CGI" data-key="filter_architectural">Architectural CGI</button>
+            <button class="filter-btn" data-filter="Product" data-key="filter_product">Product / Prop</button>
+            <button class="filter-btn" data-filter="Character / Stylized" data-key="filter_character">Character / Creature</button>
+            <button class="filter-btn" data-filter="Scene" data-key="filter_scene">Scene & Visual Development</button>
+            <button class="filter-btn" data-filter="Animation" data-key="filter_animation">Animation</button>
+            <button class="filter-btn" data-filter="Motion Graphics" data-key="filter_motion">Motion Graphics</button>
+            <button class="filter-btn" data-filter="VFX" data-key="filter_vfx">VFX / Compositing</button>
+            <button class="filter-btn" data-filter="LiveAction" data-key="filter_liveaction">Live Action / Filmmaking</button>
+            <button class="filter-btn" data-filter="Music" data-key="filter_music">Music Video / Cinematic</button>
+            <button class="filter-btn" data-filter="Journey" data-key="filter_journey">3D Journey Archive</button>
+        </div>
+    </div>
+
+    <!-- ====== PORTFOLIO GRID ====== -->
+    <section class="portfolio-grid container" id="portfolioGrid">
+        <!-- Chargé dynamiquement par main.js -->
+    </section>
+
+    <!-- ====== SECTION VIDÉOS (GRILLE) ====== -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Vidéos <span class="highlight">3D / CGI</span></h2>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom:2rem;">
+                Tutoriels, making-of, motion graphics et présentations de projets.
+            </p>
+            <div class="video-grid" id="videoGrid">
+                <!-- Chargé dynamiquement par main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">
+                    <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                    <p data-key="footer_tagline">3D · CGI · VFX · Visual Storytelling</p>
+                </div>
+                <div class="footer-social">
+                    <!-- STUDIO -->
+                    <span class="label">STUDIO</span>
+                    <a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
+                    <span class="separator">|</span>
+                    <!-- PERSO -->
+                    <span class="label">PERSO</span>
+                    <a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>
+                    <a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yv Laroch / GraphyNdot. <span data-key="footer_rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== MODAL VIDÉO ====== -->
+    <!-- <div class="video-modal" id="videoModal" onclick="closeVideo()"> -->
+        <!-- <div class="video-modal-content" onclick="event.stopPropagation()"> -->
+            <!-- <button class="video-modal-close" onclick="closeVideo()">&times;</button> -->
+            <!-- Lecteur YouTube -->
+            <!-- <iframe id="videoIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            <!-- Lecteur vidéo locale -->
+            <!-- <video id="localVideoPlayer" controls style="display:none; width:100%; height:100%;"> -->
+                <!-- Votre navigateur ne supporte pas la lecture vidéo. -->
+            <!-- </video> -->
+        <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- ====== SCRIPTS ====== -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
