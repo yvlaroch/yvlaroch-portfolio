@@ -1,0 +1,11 @@
+{
+  "id": 13,
+  "title": "Titre du projet",
+  "category": "Environments",
+  "description": "Description du projet.",
+  "image": "images/portfolio/mon-projet/main.jpg",
+  "year": "2025",
+  "software": ["Blender"],
+  "tags": ["tag1", "tag2"],
+  "gallery": ["images/portfolio/mon-projet/render1.jpg"]
+}

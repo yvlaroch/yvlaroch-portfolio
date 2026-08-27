@@ -1,0 +1,24 @@
+GraphyNdot/
+├── index.html
+├── portfolio.html
+├── about.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   ├── translations.js
+│   └── data.json
+├── images/
+│   ├── logo/
+│   │   └── logo.svg
+│   ├── hero/
+│   │   └── hero-bg.jpg
+│   └── portfolio/
+│       ├── projet1/
+│       │   ├── main.jpg
+│       │   ├── wireframe.jpg
+│       │   └── reference.jpg
+│       └── ...
+└── videos/
+    └── showreel.mp4

@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "YV LAROCH",
+    "subtitle": "3D / CGI / VFX · Visual Storytelling",
+    "tagline": "Design your own universe."
+  },
+  "about": {
+    "bio": "3D/CGI artist with a background in environments, architectural visualization, lighting, rendering and visual storytelling. Available for freelance and remote projects.",
+    "tools": ["Blender", "GIMP", "Inkscape", "Krita", "Kdenlive", "DaVinci Resolve"]
+  },
+  "social": {
+    "youtube": "https://www.youtube.com/@graphyndot6934",
+    "instagram": "https://www.instagram.com/yv_laroch/",
+    "linkedin": "https://www.linkedin.com/in/yves-randrianantenaina",
+    "facebook": "https://www.facebook.com/GraphyNdot/"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Manjakamiadana Palace",
+      "category": "Architectural CGI",
+      "description": "Photorealistic 3D reconstruction of the historic palace in Madagascar.",
+      "image": "images/portfolio/manjakamiadana/main.jpg",
+      "year": "2019",
+      "software": ["Blender"],
+      "tags": ["architecture", "photorealistic", "reconstruction"]
+    },
+    {
+      "id": 2,
+      "title": "Ancient Desert Gate",
+      "category": "Environments",
+      "description": "Fantasy environment exploring large-scale composition and atmospheric lighting.",
+      "image": "images/portfolio/desert-gate/main.jpg",
+      "year": "2016",
+      "software": ["Blender"],
+      "tags": ["fantasy", "environment", "cinematic"]
+    },
+    {
+      "id": 3,
+      "title": "Earth & Spaceship",
+      "category": "Cinematic CGI",
+      "description": "Science-fiction scene combining environment, hard-surface elements and cinematic composition.",
+      "image": "images/portfolio/earth-spaceship/main.jpg",
+      "year": "2015",
+      "software": ["Blender"],
+      "tags": ["sci-fi", "space", "cinematic"]
+    },
+    {
+      "id": 4,
+      "title": "Super Mario - Stylized Environment",
+      "category": "Character / Stylized",
+      "description": "Stylized 3D environment with character modeling and colorful presentation.",
+      "image": "images/portfolio/mario/main.jpg",
+      "year": "2017",
+      "software": ["Blender"],
+      "tags": ["stylized", "character", "game"]
+    },
+    {
+      "id": 5,
+      "title": "Floating Lighthouse",
+      "category": "Environments",
+      "description": "Surreal environment concept combining architecture, landscape and dramatic composition.",
+      "image": "images/portfolio/lighthouse/main.jpg",
+      "year": "2016",
+      "software": ["Blender"],
+      "tags": ["surreal", "environment", "cinematic"]
+    },
+    {
+      "id": 6,
+      "title": "Simpa Building",
+      "category": "Architectural CGI",
+      "description": "Architectural reconstruction study exploring facade modeling and visualization.",
+      "image": "images/portfolio/simpa/main.jpg",
+      "year": "2020",
+      "software": ["Blender"],
+      "tags": ["architecture", "reconstruction", "visualization"]
+    },
+    {
+      "id": 7,
+      "title": "Snowy Mountain",
+      "category": "Environments",
+      "description": "Environment study focused on terrain, atmosphere and landscape composition.",
+      "image": "images/portfolio/snowy-mountain/main.jpg",
+      "year": "2014",
+      "software": ["Blender"],
+      "tags": ["environment", "landscape", "atmosphere"]
+    },
+    {
+      "id": 8,
+      "title": "Organic Creature",
+      "category": "Experimental / R&D",
+      "description": "Creature modeling study exploring organic shapes and procedural textures.",
+      "image": "images/portfolio/creature/main.jpg",
+      "year": "2020",
+      "software": ["Blender"],
+      "tags": ["organic", "creature", "experimental"]
+    }
+  ]
+}

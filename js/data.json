@@ -1,0 +1,150 @@
+{
+  "hero": {
+    "title": "YV LAROCH",
+    "subtitle": "3D · CGI · VFX · Visual Storytelling",
+    "tagline": "From ideas to digital worlds.",
+    "avatar": "images/avatar.jpg"
+  },
+
+  "about": {
+    "bio": "3D/CGI artist with a long-term background in modeling, environments, architectural visualization, lighting, rendering and visual storytelling.\n\nMy work includes personal studies ranging from stylized characters and environments to architectural reconstruction, cinematic CGI and experimental VFX.\n\nI use 3D as a visual storytelling tool, combining modeling, composition, lighting and rendering to turn concepts and references into images and scenes.\n\nAvailable for freelance and remote projects involving 3D assets, environments, CGI visuals, architectural visualization, VFX and visual content creation.",
+
+    "journey": "My journey into 3D began as a self-directed exploration of digital art and computer-generated imagery. Over the years, I experimented with 3D modeling, environments, architecture, characters, materials, lighting, rendering and cinematic composition.\n\nMany of these projects were personal studies created with limited resources and hardware. Each project contributed to the development of my technical and visual skills.\n\nWorking primarily as an independent artist pushed me to learn how to solve creative and technical problems with the tools available to me. That resourcefulness remains an important part of my approach today.",
+
+    "approach": "I approach 3D as more than a technical discipline. The goal is to use 3D as a tool for creating images, environments and stories.\n\nDepending on the project, I can work from:\n• photographic references\n• architectural references\n• sketches\n• written concepts\n• visual moodboards\n• existing assets\n• AI-generated concepts\n• client references\n\nThe objective is to transform an idea into a visually understandable result.",
+
+    "tools": ["Blender", "GIMP", "Inkscape", "Krita", "Kdenlive", "CapCut", "DaVinci Resolve", "Tahoma2D", "OpenToonz", "Synfig", "Audacity"]
+  },
+
+  "social": {
+    "youtube": "https://www.youtube.com/@graphyndot6934",
+    "instagram": "https://www.instagram.com/yv_laroch/",
+    "linkedin": "https://www.linkedin.com/in/yves-randrianantenaina",
+    "facebook": "https://www.facebook.com/GraphyNdot/"
+  },
+
+  "featured": [1, 2, 3, 4, 5, 6],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Manjakamiadana Palace",
+      "category": "Architectural CGI",
+      "description": "Photorealistic 3D reconstruction of the historic palace in Madagascar. The project explored architectural modeling, reference-based reconstruction, materials, lighting and photorealistic rendering.",
+      "image": "images/portfolio/manjakamiadana/main.jpg",
+      "year": "2019",
+      "software": ["Blender"],
+      "tags": ["architecture", "photorealistic", "reconstruction"]
+    },
+    {
+      "id": 2,
+      "title": "Ancient Desert Gate",
+      "category": "Environments",
+      "description": "A fantasy environment study exploring large-scale composition, environmental modeling, atmospheric lighting and cinematic mood.",
+      "image": "images/portfolio/desert-gate/main.jpg",
+      "year": "2016",
+      "software": ["Blender"],
+      "tags": ["fantasy", "environment", "cinematic"]
+    },
+    {
+      "id": 3,
+      "title": "Earth & Spaceship",
+      "category": "Cinematic CGI",
+      "description": "A conceptual science-fiction scene combining environment, hard-surface elements, lighting and cinematic composition.",
+      "image": "images/portfolio/earth-spaceship/main.jpg",
+      "year": "2015",
+      "software": ["Blender"],
+      "tags": ["sci-fi", "space", "cinematic"]
+    },
+    {
+      "id": 4,
+      "title": "Super Mario - Stylized Environment",
+      "category": "Character / Stylized",
+      "description": "A stylized 3D environment combining character modeling, stylized assets, environmental design, lighting and composition.",
+      "image": "images/portfolio/mario/main.jpg",
+      "year": "2017",
+      "software": ["Blender"],
+      "tags": ["stylized", "character", "game"]
+    },
+    {
+      "id": 5,
+      "title": "Floating Lighthouse",
+      "category": "Environments",
+      "description": "A surreal environment concept combining architecture, landscape, atmosphere and dramatic composition.",
+      "image": "images/portfolio/lighthouse/main.jpg",
+      "year": "2016",
+      "software": ["Blender"],
+      "tags": ["surreal", "environment", "cinematic"]
+    },
+    {
+      "id": 6,
+      "title": "Simpa Building",
+      "category": "Architectural CGI",
+      "description": "A personal reconstruction study exploring the interpretation of an existing building through 3D modeling, focusing on architectural proportions, facade reconstruction and visualization.",
+      "image": "images/portfolio/simpa/main.jpg",
+      "year": "2020",
+      "software": ["Blender"],
+      "tags": ["architecture", "reconstruction", "visualization"]
+    },
+    {
+      "id": 7,
+      "title": "Snowy Mountain",
+      "category": "Environments",
+      "description": "An early environment study focused on terrain, atmosphere, lighting and landscape composition.",
+      "image": "images/portfolio/snowy-mountain/main.jpg",
+      "year": "2014",
+      "software": ["Blender"],
+      "tags": ["environment", "landscape", "atmosphere"]
+    },
+    {
+      "id": 8,
+      "title": "Organic Creature",
+      "category": "Experimental / R&D",
+      "description": "An experimental creature modeling and texturing study exploring organic shapes, unusual forms and procedural-looking materials.",
+      "image": "images/portfolio/creature/main.jpg",
+      "year": "2020",
+      "software": ["Blender"],
+      "tags": ["organic", "creature", "experimental"]
+    },
+    {
+      "id": 9,
+      "title": "Tunnel - Dodge Challenger",
+      "category": "Cinematic CGI",
+      "description": "A cinematic environment study combining a tunnel environment, vehicle presentation, lighting and camera composition.",
+      "image": "images/portfolio/tunnel/main.jpg",
+      "year": "2015",
+      "software": ["Blender"],
+      "tags": ["vehicle", "cinematic", "environment"]
+    },
+    {
+      "id": 10,
+      "title": "Mario - Character Study",
+      "category": "Character / Stylized",
+      "description": "A personal character modeling and rendering study exploring proportions, materials, lighting and stylized presentation.",
+      "image": "images/portfolio/mario-character/main.jpg",
+      "year": "2017",
+      "software": ["Blender"],
+      "tags": ["character", "stylized"]
+    },
+    {
+      "id": 11,
+      "title": "Epic Portal",
+      "category": "Environments",
+      "description": "A fantasy environment study focused on environment construction, rock formations, lighting and visual storytelling.",
+      "image": "images/portfolio/portal/main.jpg",
+      "year": "2016",
+      "software": ["Blender"],
+      "tags": ["fantasy", "environment", "cinematic"]
+    },
+    {
+      "id": 12,
+      "title": "Manjakamiadana - Clay Render",
+      "category": "Architectural CGI",
+      "description": "A complementary visualization study focusing more directly on architectural form, proportions and presentation.",
+      "image": "images/portfolio/manjakamiadana-clay/main.jpg",
+      "year": "2019",
+      "software": ["Blender"],
+      "tags": ["architecture", "clay", "visualization"]
+    }
+  ]
+}
