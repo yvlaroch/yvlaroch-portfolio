@@ -12,151 +12,139 @@
 <body>
 
     <!-- ====== NAVBAR ====== -->
-   <header class="navbar">
-			<div class="container">
-				<div class="logo">
-					<a href="index.html">
-						<img src="images/logo/logo.svg" alt="Yv Laroch" />
-						<span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
-					</a>
-				</div>
-				<nav>
-					<ul class="nav-links" id="navLinks">
-						<li><a href="index.html" data-key="nav_home">Home</a></li>
-						<li><a href="portfolio.html" data-key="nav_portfolio">Portfolio</a></li>
-						<li><a href="about.html" data-key="nav_about">About</a></li>
-						<li><a href="contact.html" class="active" data-key="nav_contact">Contact</a></li>
-					</ul>
-					<div class="lang-switcher">
-						<button class="lang-btn" data-lang="fr">FR</button>
-						<button class="lang-btn active" data-lang="en">EN</button>
-						<button class="lang-btn" data-lang="mg">MG</button>
-					</div>
-					<div class="menu-toggle" id="menuToggle">
-						<span></span><span></span><span></span>
-					</div>
-				</nav>
-			</div>
-	</header>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.svg" alt="Yv Laroch" />
+                    <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" data-key="nav_home">Home</a></li>
+                    <li><a href="portfolio.html" data-key="nav_portfolio">Portfolio</a></li>
+                    <li><a href="about.html" data-key="nav_about">About</a></li>
+                    <li><a href="contact.html" class="active" data-key="nav_contact">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="mg">MG</button>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <!-- ====== CONTACT ====== -->
-   <section class="contact-hero">
-		<div class="container">
-			<h1 data-key="contact_title">Let's <span class="highlight">Connect</span></h1>
-			<div class="contact-grid">
-				<div class="contact-info">
-    <h3 data-key="contact_info">Available for freelance projects...</h3>
-    
-    <!-- EMAIL PROTÉGÉ -->
-    <p><i class="fas fa-envelope" style="color:var(--color-blue-royal); margin-right:0.5rem;"></i> 
-        <span id="emailDisplay">larochcorp@gmail.com</span>
-    </p>
-    
-    <!-- OU VERSION LIEN -->
-    <!-- <p><i class="fas fa-envelope" style="color:var(--color-blue-royal); margin-right:0.5rem;"></i>  -->
-        <!-- <a href="mailto:larochcorp@gmail.com" id="emailLink">larochcorp@gmail.com</a> -->
-    <!-- </p> -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 data-key="contact_title">Let's <span class="highlight">Connect</span></h1>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-key="contact_info">Available for freelance projects...</h3>
+                    
+                    <p><i class="fas fa-envelope" style="color:var(--color-blue-royal); margin-right:0.5rem;"></i> 
+                        <span id="emailDisplay">larochcorp@gmail.com</span>
+                    </p>
 
-					<div class="social-links">
-							<!-- === STUDIO : GraphyNdot === -->
-							<span style="color: var(--text-muted); font-size:0.7rem; font-weight:600; letter-spacing:1px; margin-right:0.5rem;">STUDIO</span>
-							<a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
-							<a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
-							
-							<span style="color: var(--text-muted); font-size:0.7rem; font-weight:600; letter-spacing:1px; margin:0 0.5rem;">|</span>
-							
-							<!-- === PERSO : Yv Laroch === -->
-							<span style="color: var(--text-muted); font-size:0.7rem; font-weight:600; letter-spacing:1px; margin-right:0.5rem;">PERSO</span>
-							<a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
-							<a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
-							<a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
-							<a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
-							<a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>  <!-- 👈 NOUVEAU -->
-							<a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>            <!-- 👈 NOUVEAU -->
-				</div>
-			</div>
-					<form 
-    class="contact-form" 
-    name="contact" 
-    method="POST" 
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    action="/contact/success"
->
-						  <!-- Champ Honeypot (caché aux humains, visible par les bots) -->
-    <input type="hidden" name="form-name" value="contact" />
-    <div style="position: absolute; left: -9999px; top: -9999px;">
-        <label for="bot-field">Ne remplissez pas ce champ</label>
-        <input type="text" id="bot-field" name="bot-field" />
-    </div>
-    
-    <!-- Autres champs -->
-    <input type="text" name="name" placeholder="Votre nom" required data-key="contact_form_name" />
-    <input type="email" name="email" placeholder="Votre email" required data-key="contact_form_email" />
-    <textarea name="message" placeholder="Votre message" required data-key="contact_form_message"></textarea>
-    
-    <!-- Honeypot supplémentaire (temps de remplissage) -->
-    <input type="hidden" name="timestamp" id="formTimestamp" />
-    
-    <button type="submit" class="btn btn-primary" data-key="contact_form_send">Envoyer</button>
-</form>
-			</div>
-		</div>
-	</section>
-<script>
-    // Anti-bot : empêcher les soumissions trop rapides
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('.contact-form');
-        const timestamp = document.getElementById('formTimestamp');
-        if (timestamp) {
-            timestamp.value = Date.now();
-        }
-        
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                const timeDiff = Date.now() - parseInt(timestamp.value);
-                if (timeDiff < 3000) { // moins de 3 secondes = bot
-                    e.preventDefault();
-                    alert('Votre message a été détecté comme spam. Veuillez réessayer.');
-                }
-            });
-        }
-    });
-</script>
-    <!-- ====== FOOTER ====== -->
-   <footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="brand">
-                <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
-                <p data-key="footer_tagline">3D · CGI · VFX · Visual Storytelling</p>
+                    <div class="social-links">
+                        <span style="color: var(--text-muted); font-size:0.7rem; font-weight:600; letter-spacing:1px; margin-right:0.5rem;">STUDIO</span>
+                        <a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
+                        <span style="color: var(--text-muted); font-size:0.7rem; font-weight:600; letter-spacing:1px; margin:0 0.5rem;">|</span>
+                        <span style="color: var(--text-muted); font-size:0.7rem; font-weight:600; letter-spacing:1px; margin-right:0.5rem;">PERSO</span>
+                        <a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>
+                        <a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- ===== FORMULAIRE CORRIGÉ ===== -->
+                <form 
+                    class="contact-form" 
+                    name="contact" 
+                    method="POST" 
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                >
+                    <!-- Champ honeypot -->
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div style="position: absolute; left: -9999px; top: -9999px;">
+                        <label for="bot-field">Ne remplissez pas ce champ</label>
+                        <input type="text" id="bot-field" name="bot-field" />
+                    </div>
+                    
+                    <!-- Champs visibles -->
+                    <input type="text" name="name" placeholder="Your Name" required data-key="contact_form_name" />
+                    <input type="email" name="email" placeholder="Your Email" required data-key="contact_form_email" />
+                    <textarea name="message" placeholder="Your Message" required data-key="contact_form_message"></textarea>
+                    
+                    <!-- Anti-bot : temps de remplissage -->
+                    <input type="hidden" name="timestamp" id="formTimestamp" />
+                    
+                    <button type="submit" class="btn btn-primary" data-key="contact_form_send">Send Message</button>
+                </form>
             </div>
-          <div class="footer-social">
-    <!-- === STUDIO : GraphyNdot === -->
-    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">STUDIO</span>
-    <a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
-    
-    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin:0 0.3rem;">|</span>
-    
-    <!-- === PERSO : Yv Laroch === -->
-    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">PERSO</span>
-    <a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
-    <a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>  <!-- 👈 NOUVEAU -->
-    <a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>            <!-- 👈 NOUVEAU -->
-</div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Yv Laroch / GraphyNdot. <span data-key="footer_rights">All rights reserved.</span></p>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">
+                    <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                    <p data-key="footer_tagline">3D · CGI · VFX · Visual Storytelling</p>
+                </div>
+                <div class="footer-social">
+                    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">STUDIO</span>
+                    <a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
+                    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin:0 0.3rem;">|</span>
+                    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">PERSO</span>
+                    <a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>
+                    <a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yv Laroch / GraphyNdot. <span data-key="footer_rights">All rights reserved.</span></p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="js/translations.js"></script>   <!-- 1. Traductions -->
-<script src="js/main.js"></script>           <!-- 2. Données et interactions -->
+    <script>
+        // Anti-bot : empêcher les soumissions trop rapides
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form');
+            const timestamp = document.getElementById('formTimestamp');
+            if (timestamp) {
+                timestamp.value = Date.now();
+            }
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    const timeDiff = Date.now() - parseInt(timestamp.value);
+                    if (timeDiff < 3000) { // moins de 3 secondes = bot
+                        e.preventDefault();
+                        alert('Your message was detected as spam. Please try again.');
+                    }
+                });
+            }
+        });
+    </script>
 
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
