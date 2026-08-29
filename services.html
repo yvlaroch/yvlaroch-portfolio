@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Yv Laroch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="images/logo/favicon.ico" />
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.svg" alt="Yv Laroch" />
+                    <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" data-key="nav_home">Home</a></li>
+                    <li><a href="portfolio.html" data-key="nav_portfolio">Portfolio</a></li>
+                    <li><a href="about.html" data-key="nav_about">About</a></li>
+                    <li><a href="services.html" class="active" data-key="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="mg">MG</button>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== SERVICES HERO ====== -->
+    <section class="services-hero" style="padding-top: 120px; padding-bottom: 2rem; background: var(--bg-primary); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; text-align: center; background: linear-gradient(135deg, var(--color-violet-dark), var(--color-violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem;">
+                My <span style="background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Services</span>
+            </h1>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                3D / CGI · VFX · Motion Design · Webdesign — je vous accompagne de la conception à la livraison.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====== SERVICES GRID ====== -->
+    <section style="padding: 3rem 0 5rem; background: var(--bg-primary);">
+        <div class="container">
+
+            <!-- SERVICE 1 : 3D / CGI -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border-color);">
+                <div>
+                    <span style="font-size: 2.5rem; color: var(--color-blue-royal);"><i class="fas fa-cubes"></i></span>
+                    <h2 style="text-align: left; font-size: 2rem; margin-bottom: 0.5rem;">3D / CGI</h2>
+                    <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Création d'images et d'environnements 3D photoréalistes</h4>
+                    <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+                        <li>✅ Modélisation 3D (objets, environnements, architecture)</li>
+                        <li>✅ Architectural CGI — visualisation photoréaliste</li>
+                        <li>✅ Character Modeling — personnages et créatures</li>
+                        <li>✅ Rendu & Éclairage — Cycles / Eevee</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;"><strong>Outils :</strong> Blender · GIMP · Krita · Inkscape</p>
+                    <p style="color: var(--color-blue-royal); font-weight: 600;">À partir de 300 000 Ar par projet</p>
+                </div>
+                <div>
+                    <img src="images/portfolio/manjakamiadana.jpg" alt="3D CGI" style="width: 100%; border-radius: 12px; border: 1px solid var(--border-color);" />
+                </div>
+            </div>
+
+            <!-- SERVICE 2 : VFX / Filmmaking -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border-color);">
+                <div>
+                    <img src="images/portfolio/tunnel.jpg" alt="VFX" style="width: 100%; border-radius: 12px; border: 1px solid var(--border-color);" />
+                </div>
+                <div>
+                    <span style="font-size: 2.5rem; color: var(--color-blue-royal);"><i class="fas fa-film"></i></span>
+                    <h2 style="text-align: left; font-size: 2rem; margin-bottom: 0.5rem;">VFX / Filmmaking</h2>
+                    <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Effets visuels et post-production pour le cinéma</h4>
+                    <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+                        <li>✅ Compositing — intégration 3D dans des plans réels</li>
+                        <li>✅ Effets visuels — particules, simulations, atmosphères</li>
+                        <li>✅ Motion Tracking — suivi de caméra</li>
+                        <li>✅ Chroma Key — incrustation sur fond vert</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;"><strong>Outils :</strong> Blender · DaVinci Resolve · Kdenlive · HitFilm</p>
+                    <p style="color: var(--color-blue-royal); font-weight: 600;">À partir de 400 000 Ar par projet</p>
+                </div>
+            </div>
+
+            <!-- SERVICE 3 : Motion Design / Graphisme -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border-color);">
+                <div>
+                    <span style="font-size: 2.5rem; color: var(--color-blue-royal);"><i class="fas fa-bolt"></i></span>
+                    <h2 style="text-align: left; font-size: 2rem; margin-bottom: 0.5rem;">Motion Design / Graphisme</h2>
+                    <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Identité visuelle et animation graphique</h4>
+                    <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+                        <li>✅ Motion Graphics — animation de textes, logos, infographies</li>
+                        <li>✅ Branding — création ou refonte d'identité de marque</li>
+                        <li>✅ Design graphique — affiches, brochures, charte</li>
+                        <li>✅ Templates vidéo — packs motion graphiques</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;"><strong>Outils :</strong> Blender · GIMP · Inkscape · Kdenlive · CapCut</p>
+                    <p style="color: var(--color-blue-royal); font-weight: 600;">À partir de 150 000 Ar par projet</p>
+                </div>
+                <div>
+                    <img src="images/portfolio/netflix-title-3d.jpg" alt="Motion Design" style="width: 100%; border-radius: 12px; border: 1px solid var(--border-color);" />
+                </div>
+            </div>
+
+            <!-- SERVICE 4 : Webdesign -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 2rem; padding: 2rem; background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border-color);">
+                <div>
+                    <img src="images/portfolio/simpa.jpg" alt="Webdesign" style="width: 100%; border-radius: 12px; border: 1px solid var(--border-color);" />
+                </div>
+                <div>
+                    <span style="font-size: 2.5rem; color: var(--color-blue-royal);"><i class="fas fa-code"></i></span>
+                    <h2 style="text-align: left; font-size: 2rem; margin-bottom: 0.5rem;">Webdesign</h2>
+                    <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Sites web professionnels, sécurisés et multilingues</h4>
+                    <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+                        <li>✅ Design sur-mesure — identité visuelle, maquettes</li>
+                        <li>✅ Multilingue — FR/EN/MG</li>
+                        <li>✅ Sécurité — HTTPS, anti-bots, headers</li>
+                        <li>✅ Formation incluse — documentation + session 30-60 min</li>
+                        <li>✅ Hébergement gratuit — Netlify (inclus)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;"><strong>Outils :</strong> HTML5 · CSS3 · JavaScript · Netlify · GitHub</p>
+                    <p style="color: var(--color-blue-royal); font-weight: 600;">À partir de 400 000 Ar pour un site vitrine simple</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====== CTA FINAL ====== -->
+    <section style="padding: 3rem 0 5rem; background: var(--bg-secondary); text-align: center; border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Parlons de <span class="highlight">votre projet</span></h2>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">
+                Que vous ayez besoin d'une animation 3D, d'un site web ou d'un logo, je suis à votre écoute.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Me contacter</a>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">
+                    <span class="logo-text">Yv<span class="dot">.</span>Laroch</span>
+                    <p data-key="footer_tagline">3D · CGI · VFX · Visual Storytelling</p>
+                </div>
+                <div class="footer-social">
+                    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">STUDIO</span>
+                    <a href="#" data-social="youtube_studio" title="GraphyNdot YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" data-social="facebook_studio" title="GraphyNdot Facebook"><i class="fab fa-facebook"></i></a>
+                    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin:0 0.3rem;">|</span>
+                    <span style="color: var(--text-muted); font-size:0.65rem; font-weight:600; letter-spacing:1px; margin-right:0.3rem;">PERSO</span>
+                    <a href="#" data-social="youtube_perso" title="Yv Laroch YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" data-social="facebook_perso" title="Yv Laroch Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-social="instagram" title="Yv Laroch Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" data-social="linkedin" title="Yv Laroch LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-social="artstation" title="Yv Laroch ArtStation"><i class="fab fa-artstation"></i></a>
+                    <a href="#" data-social="tiktok" title="Yv Laroch TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yv Laroch / GraphyNdot. <span data-key="footer_rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
